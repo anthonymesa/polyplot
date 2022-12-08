@@ -44,3 +44,7 @@ Mod for Minecraft Forge with Minecraft v1.12.2.
 
 - Fixes:
   - Fix bug where walls generated and protected plot area doesn't line up exactly.
+  
+## User Manual
+
+(Coming soon)
