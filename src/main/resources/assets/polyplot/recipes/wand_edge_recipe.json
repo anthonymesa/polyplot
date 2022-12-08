@@ -1,0 +1,17 @@
+{
+    "type": "minecraft:crafting_shapeless",
+    "ingredients": [
+        {
+            "item": "minecraft:dye",
+            "data": 13
+        },
+        {
+            "item": "polyplot:wand_wierd"
+        }
+    ],
+    "result": {
+        "item": "polyplot:wand_edge",
+        "count": 1
+    }
+}
+

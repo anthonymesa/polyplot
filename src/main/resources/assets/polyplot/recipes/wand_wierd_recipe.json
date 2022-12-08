@@ -1,0 +1,24 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "  E",
+        " F ",
+        "B  "
+    ],
+    "key": {
+        "E": {
+            "item": "minecraft:ender_pearl"
+        },
+        "F": {
+            "item": "minecraft:fish",
+            "data": 0
+        },
+        "B": {
+            "item": "minecraft:bone"
+        }
+    },
+    "result": {
+        "item": "polyplot:wand_wierd",
+        "count": 1
+    }
+}

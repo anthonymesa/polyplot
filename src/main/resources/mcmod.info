@@ -1,0 +1,16 @@
+[
+{
+    "modid": "polyplot",
+    "name": "PolyPlot",
+    "description": "Create polygonal plots of protected land",
+    "version": "1.0",
+    "mcversion": "1.12.2",
+    "url": "luridarc.com",
+    "updateUrl": "",
+    "authorList": ["Anthony Mesa"],
+    "credits": "ReallySnazzy, for all the help.",
+    "logoFile": "",
+    "screenshots": [],
+    "dependencies": []
+}
+]
