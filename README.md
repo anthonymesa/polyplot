@@ -3,6 +3,9 @@
 
 Mod for Minecraft Forge with Minecraft v1.12.2.
 
+Curseforge: https://www.curseforge.com/minecraft/mc-mods/polyplot
+Youtube Demo: https://www.youtube.com/watch?v=iZ_u5vh_u4w
+
 ## Specifications
 ### Features:
 
