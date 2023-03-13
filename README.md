@@ -96,3 +96,27 @@ To delete your plot, wield any of the Banagon's Wands and right click the ground
 ### Customise Plot Name
 
 To customise the name of your plot that shows up to other players when they enter and exit your plot territory, rename the wand using an anvil.
+
+# Development
+
+## Build
+
+Java JDK 8 is required at this time.
+
+```bash
+sudo apt install openjdk-8-jdk
+```
+
+First run the server, and then run the client to connect to the server in another shell.
+
+```bash
+./gradlew runServer
+```
+
+then
+
+```bash
+./gradlew runClient
+```
+
+You may have to chmod the gradlew file to be executable.
