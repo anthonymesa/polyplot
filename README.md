@@ -1,5 +1,4 @@
 # PolyPlot
-(Alternate name: Bangon's charm)
 
 Mod for Minecraft Forge with Minecraft v1.12.2.
 
@@ -31,7 +30,7 @@ Youtube Demo: https://www.youtube.com/watch?v=iZ_u5vh_u4w
     - /pp_setPillarConfig: set blockstate configuration for pillars
     - /pp_setWallConfig: set blockstate configuration for walls
 
-### Planned Features
+### Planned Features for the Future
 
 - New Items:
   - 3 lore books, adding some background lore to why the wands exist, that can be found randomly in generated chests.
@@ -49,6 +48,51 @@ Youtube Demo: https://www.youtube.com/watch?v=iZ_u5vh_u4w
 - Fixes:
   - Fix bug where walls generated and protected plot area doesn't line up exactly.
   
-## User Manual
+# User Manual
 
-(Coming soon)
+## Crafting Recipes
+
+### Wierd Wand (Shaped Recipe)
+
+|Wierd Wand|
+|---|
+|![](res/wierd-wand-craft.png)|
+
+### Banagon's Wand (Non-Shaped recipe)
+
+|Banagon's Wand| Banagon's Wand of Spires| Banagon's Wand of Barriers|
+|---|---|---|
+|![](res/banagons-wand-craft.png)|![](res/banagons-wand-spires-craft.png)|![](res/banagons-wand-walls-craft.png)|
+
+## Plots
+
+### Create
+
+#### Steps
+
+1. To begin your plot, wield one of Banagon's Wands on your item bar.
+2. Right click a block on the ground to begin your plot. This is your 'origin' block.
+3. Right click somewhere that isn't the origin block to create a new vertex for your plot.
+4. Repeat step 3 until you have added all desired points to your polygon.
+5. Right click your 'origin' block to complete the plot.
+
+> Note: If you are using Banagon's Wand of Barriers, and your plot extends across open air, the 
+
+#### Quit creating a plot
+
+If you start drawing a plot but put put a polygon point somewhere you don't want or otherwise mess up your shape, you can abandon the drawing process by right clicking towards the sky with one of the Banagon's Wands.
+
+#### Restrictions
+
+- Plot polygons may not have overlapping edges.
+- A player can have at most 3 plots.
+- A plot polygon can have at most 30 points.
+- The dimensions of the square that circumscribes the plot polygon can not be greater than 100 x 100 blocks.
+
+### Delete
+
+To delete your plot, wield any of the Banagon's Wands and right click the ground three times inside of your plot area.
+
+### Customise Plot Name
+
+To customise the name of your plot that shows up to other players when they enter and exit your plot territory, rename the wand using an anvil.
