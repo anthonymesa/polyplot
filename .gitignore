@@ -5,3 +5,6 @@ build/
 run/
 
 .gradle/
+
+*:Zone.Identifier
+`
