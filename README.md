@@ -56,7 +56,7 @@ Youtube Demo: https://www.youtube.com/watch?v=iZ_u5vh_u4w
 
 |Wierd Wand|
 |---|
-|![](res/wierd-wand-craft.png)|
+|![](res/weird-wand-craft.png)|
 
 ### Banagon's Wand (Non-Shaped recipe)
 

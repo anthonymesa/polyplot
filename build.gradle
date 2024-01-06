@@ -13,9 +13,23 @@ apply plugin: 'net.minecraftforge.gradle'
 apply plugin: 'eclipse'
 apply plugin: 'maven-publish'
 
-version = '0.9-alpha'
-group = 'com.luridarc.polyplot' // http://maven.apache.org/guides/mini/guide-naming-conventions.html
-archivesBaseName = 'polyplot'
+//================================
+// made changes via https://stackoverflow.com/questions/71444060/how-to-fix-my-mcmod-info-file-not-loading
+
+// version = '0.9-alpha'
+// group = 'com.luridarc.polyplot' // http://maven.apache.org/guides/mini/guide-naming-conventions.html
+// archivesBaseName = 'polyplot'
+
+// +SETTINGS
+def domain = 'com.luridarc' // http://maven.apache.org/guides/mini/guide-naming-conventions.html
+def modid = 'polyplot'
+def mcversion = '1.12.2'
+version = '1.0'
+// -SETTINGS
+group = "${domain}.${modid}"
+archivesBaseName = "${modid}_${mcversion}" // add Minecraft version to jar for better user friendliness
+
+//==================================
 
 sourceCompatibility = targetCompatibility = compileJava.sourceCompatibility = compileJava.targetCompatibility = '1.8' // Need this here so eclipse task generates correctly.
 
@@ -115,6 +129,9 @@ publishing {
     }
 }
 
+//=============================================
+// made changes via https://stackoverflow.com/questions/71444060/how-to-fix-my-mcmod-info-file-not-loading
+
 apply plugin: 'idea'
 idea {
     module {
@@ -127,8 +144,32 @@ subprojects {
 
 task prepareAssets(type: Copy) {
     group = 'build'
+    from(sourceSets.main.resources.srcDirs) {
+        include 'mcmod.info'
+
+        // replace version and mcversion
+        expand 'version':project.version, 'mcversion':mcversion
+    }
     from project.file('src/main/resources')
     into project.file('build/classes/java/main')
 }
 
 classes.dependsOn(prepareAssets)
+
+// replace values in mcmod.info before packing in jar
+processResources {
+    // replace stuff in mcmod.info, nothing else
+    from(sourceSets.main.resources.srcDirs) {
+        include 'mcmod.info'
+
+        // replace version and mcversion
+        expand 'version':project.version, 'mcversion':mcversion
+    }
+
+    // copy everything else, thats not the mcmod.info
+    from(sourceSets.main.resources.srcDirs) {
+        exclude 'mcmod.info'
+    }
+}
+
+//====================================================

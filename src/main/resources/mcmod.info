@@ -1,5 +1,4 @@
-[
-{
+[{
     "modid": "polyplot",
     "name": "PolyPlot",
     "description": "Create polygonal plots of protected land",
@@ -12,5 +11,4 @@
     "logoFile": "",
     "screenshots": [],
     "dependencies": []
-}
-]
+}]

@@ -16,5 +16,5 @@ public class ModItems
     public static final Item WAND_NON = new ItemWand("wand_non", WandType.NON);
     public static final Item WAND_POINT = new ItemWand("wand_point", WandType.POINT);
     public static final Item WAND_EDGE = new ItemWand("wand_edge", WandType.EDGE);
-    public static final Item WAND_WEIRD = new ItemWeirdWand("wand_wierd");
+    public static final Item WAND_WEIRD = new ItemWeirdWand("wand_weird");
 }
